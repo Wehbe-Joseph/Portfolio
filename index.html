@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Wehbe — Motion Design</title>
+  <meta name="description" content="Joseph Wehbe is a motion designer crafting films, brand stories and digital experiences for clients worldwide." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" data-cursor>
+    <span class="cursor__label" data-cursor-label>View</span>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader" data-loader>
+    <div class="loader__inner">
+      <div class="loader__title">
+        <span data-loader-word>Joseph</span>
+        <span data-loader-word>Wehbe</span>
+      </div>
+      <div class="loader__count">
+        <span data-loader-count>0</span><span class="loader__pct">%</span>
+      </div>
+    </div>
+    <div class="loader__bar"><span data-loader-bar></span></div>
+  </div>
+
+  <!-- Flowing animated background (canvas) -->
+  <canvas class="flow" data-flow></canvas>
+  <div class="flow__veil" data-flow-veil></div>
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <a href="#top" class="header__logo" data-link>jw<span class="dotpoint">.</span></a>
+    <nav class="header__nav">
+      <a href="mailto:josephjwehbe@gmail.com" data-link>Email</a>
+      <span class="sep">/</span>
+      <a href="https://wa.me/96181687069" target="_blank" rel="noopener" class="boxed" data-link>WhatsApp</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO STAGE (pinned, transitions into projects) -->
+    <section class="stage" data-stage>
+      <div class="stage__pin" data-stage-pin>
+
+        <div class="hero" data-hero>
+          <h1 class="hero__title" data-hero-title>
+            <span class="hero__line"><span class="ch-wrap">JOSEPH</span></span>
+            <span class="hero__line"><span class="ch-wrap">WEHBE</span></span>
+          </h1>
+          <p class="hero__sub" data-hero-sub>Motion&nbsp;&nbsp;Designer</p>
+        </div>
+
+        <div class="hero__corner hero__corner--bl">
+          <span class="vertical">© Joseph Wehbe</span>
+        </div>
+        <div class="hero__corner hero__corner--br">
+          <p class="hero__tag" data-hero-tag>It is made by<br />motion, rhythm<br />and light.</p>
+        </div>
+        <div class="hero__corner hero__corner--scroll">
+          <span class="vertical">scroll</span>
+          <span class="scroll-dot"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="work">
+      <div class="projects__head">
+        <h2 class="projects__title" data-reveal><span>PROJECTS</span></h2>
+        <span class="projects__line"></span>
+      </div>
+
+      <div class="projects__grid" data-projects-grid>
+        <!-- Cards injected from the `projects` array in js/main.js -->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about__label" data-reveal><span>(About)</span></div>
+      <div class="about__body">
+        <p class="about__lead">
+          <span class="word-reveal" data-words>Joseph Wehbe is a motion designer building films, brand identities and interactive experiences. I help studios and brands turn ideas into motion that feels alive.</span>
+        </p>
+        <div class="about__cols">
+          <div class="about__col" data-reveal>
+            <h3>Services</h3>
+            <ul>
+              <li>Motion Design</li>
+              <li>Brand Films</li>
+              <li>Title Sequences</li>
+              <li>3D &amp; Animation</li>
+              <li>Art Direction</li>
+            </ul>
+          </div>
+          <div class="about__col" data-reveal>
+            <h3>Recognition</h3>
+            <ul>
+              <li>9+ Client Projects</li>
+              <li>Worldwide Collaborations</li>
+              <li>End-to-end Production</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer__top">
+        <p class="footer__pre" data-reveal><span>Have a project in mind?</span></p>
+        <a href="mailto:josephjwehbe@gmail.com" class="footer__mail" data-link data-cursor-text="Mail">
+          <span class="footer__mail-line" data-reveal><span>Let's create</span></span>
+          <span class="footer__mail-line" data-reveal><span>something.</span></span>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__contact">
+          <a href="mailto:josephjwehbe@gmail.com" data-link>josephjwehbe@gmail.com</a>
+          <a href="https://wa.me/96181687069" target="_blank" rel="noopener" data-link>+961 81 687 069 (WhatsApp)</a>
+        </div>
+        <div class="footer__copy">
+          <span>© <span data-year>2026</span> Joseph Wehbe</span>
+          <span>Made with motion</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Libraries: smooth scroll + animation -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Your videos live here — edit projects.js to add/change them -->
+  <script src="projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
