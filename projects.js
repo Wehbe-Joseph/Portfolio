@@ -104,6 +104,14 @@ window.PROJECTS = [
     poster: "",
   },
 
+  /* ---------- 9 ---------- */
+  {
+    title: "Untitled Project",
+    client: "Real Estate · 2026",
+    video: "assets/projects/video9.mp4",
+    poster: "",
+  },
+
   /* ---------- PROTECTED / NDA WORK ----------
      These represent the videos you made but are not allowed to
      publish. They show as blurred "locked" cards. Add or remove
