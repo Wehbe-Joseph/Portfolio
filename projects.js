@@ -42,57 +42,65 @@ window.PROJECTS = [
 
   /* ---------- 1 ---------- */
   {
-    title: "Project One",
-    client: "Client · 2026",
+    title: "Kfardebian",
+    client: "Residential Development · 2026",
     video: "assets/projects/video1.mp4",
     poster: "",
   },
 
   /* ---------- 2 ---------- */
   {
-    title: "Project Two",
-    client: "Client · 2026",
+    title: "Villa 04",
+    client: "Private Villa · 2026",
     video: "assets/projects/video2.mp4",
     poster: "",
   },
 
   /* ---------- 3 ---------- */
   {
-    title: "Project Three",
-    client: "Client · 2026",
+    title: "Batroun",
+    client: "Coastal Development · 2026",
     video: "assets/projects/video3.mp4",
     poster: "",
   },
 
   /* ---------- 4 ---------- */
   {
-    title: "Project Four",
-    client: "Client · 2024",
+    title: "Untitled Project",
+    client: "Teaser · 2026",
     video: "assets/projects/video4.mp4",
     poster: "",
   },
 
   /* ---------- 5 ---------- */
   {
-    title: "Project Five",
-    client: "Client · 2024",
+    title: "Villa 01",
+    client: "Private Villa · 2026",
     video: "assets/projects/video5.mp4",
     poster: "",
   },
 
   /* ---------- 6 ---------- */
   {
-    title: "Project Six",
-    client: "Client · 2024",
+    title: "Hboub",
+    client: "Residential Development · 2026",
     video: "assets/projects/video6.mp4",
     poster: "",
   },
 
   /* ---------- 7 ---------- */
   {
-    title: "Project Seven",
-    client: "Client · 2024",
+    title: "Villa 02",
+    client: "Private Villa · 2026",
     video: "assets/projects/video7.mp4",
+    poster: "",
+  },
+
+  /* ---------- 8 ---------- */
+  {
+    title: "Villa 03",
+    client: "Private Villa · 2026",
+    video: "assets/projects/video8.mp4",
     poster: "",
   },
 

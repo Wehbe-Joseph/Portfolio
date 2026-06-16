@@ -1,54 +1,56 @@
 # Joseph Wehbe — Portfolio
 
-A minimal, motion-led portfolio for motion designer **Joseph Wehbe**. Built with vanilla HTML/CSS/JS and powered by [Lenis](https://github.com/studio-freight/lenis) (smooth scroll) + [GSAP](https://gsap.com/) (animations). Inspired by the clean, animation-first feel of studio sites.
+A minimal, cinematic portfolio for **Joseph Wehbe**, who creates cinematic AI walkthroughs of unbuilt real estate projects — helping developers raise investment, pre-sell units, and market properties before construction. Built with vanilla HTML/CSS/JS and powered by [Lenis](https://github.com/studio-freight/lenis) (smooth scroll) + [GSAP](https://gsap.com/) (animations).
 
 ## Features
 - Animated loader with percentage counter
+- Interactive flowing flow-field background that reacts to the cursor
 - Inertia smooth scrolling (Lenis)
 - Custom cursor with hover/"View" states
-- Hero with staggered text reveals
-- Selected work list with cursor-following image previews
-- Scroll-triggered reveals, parallax and a running marquee
-- Fully responsive (cursor/preview disable on touch devices)
+- Pinned hero that zooms/dissolves into the projects grid on scroll
+- Video project cards: silent preview on hover, popup player (with sound) on click
+- "Under NDA" locked cards for protected work
+- Fully responsive (cursor/preview effects disable on touch devices)
 
 ## Run locally
-No build step. Just serve the folder (needed so the browser can load the JS/assets):
+No build step. Serve the folder (so the browser can load the assets and stream video):
 
 ```bash
-# Python 3
-python3 -m http.server 8000
+node serve.js
 # then open http://localhost:8000
 ```
 
-## Adding your projects
-Open `js/main.js` and edit the `projects` array at the top. Each entry:
+## Adding / changing videos
+Edit **`projects.js`** (it has step-by-step instructions inside). Each entry:
 
 ```js
 {
-  title: "Project Name",            // big title
-  client: "Client / context",       // small label next to the title
-  category: "Brand Film",           // right-hand category
-  year: "2025",
-  image: "assets/projects/01.jpg",  // preview image (16:12 works well)
-  link: "https://vimeo.com/..."     // link to the project/video
+  title: "Project Name",
+  client: "Developer / location · 2025",
+  video: "assets/projects/video1.mp4",   // your mp4 in assets/projects/
+  poster: "",                            // optional still; blank = use first frame
 }
 ```
 
-The list re-renders automatically — add or remove entries freely. Drop your preview
-images (or video posters) into `assets/projects/`.
+For protected work you can't show publicly, add `locked: true` (no video needed) and the
+card renders blurred with an "UNDER NDA" badge.
 
-> Currently there are 9 placeholder entries ready for your videos.
+## Customizing copy & style
+- **Copy:** edit text directly in `index.html` (hero title, subtitle, tagline, about, outcomes, footer).
+- **Colors / fonts:** CSS variables at the top of `css/style.css` (`--bg`, `--fg`, `--accent`).
+- **Contact:** update the `mailto:` and `wa.me` links in the header and footer of `index.html`.
 
-## Customizing
-- **Colors / fonts:** CSS variables at the top of `css/style.css` (`--bg`, `--fg`, `--accent`, fonts).
-- **Copy:** edit text directly in `index.html` (hero, about, contact, social links).
-- **Email & socials:** update the `mailto:` and social `href`s in the footer of `index.html`.
+## Deploy (Vercel)
+Push to GitHub and import the repo at [vercel.com/new](https://vercel.com/new). Framework
+preset: **Other** (static site, no build step). Every `git push` auto-redeploys.
 
 ## Structure
 ```
 portfolio/
-├── index.html
-├── css/style.css
-├── js/main.js
-└── assets/projects/placeholder.svg
+├── index.html        # markup + copy
+├── css/style.css     # styling
+├── js/main.js        # animations, flow field, video lightbox
+├── projects.js       # YOUR videos (edit this)
+├── serve.js          # local dev server (video-aware)
+└── assets/projects/  # video files + placeholder
 ```
