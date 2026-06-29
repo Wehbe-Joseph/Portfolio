@@ -40,7 +40,23 @@
 
 window.PROJECTS = [
 
-  /* ---------- 1 ---------- */
+  /* ---------- 1 (newest) ---------- */
+  {
+    title: "Untitled Project",
+    client: "Real Estate · 2026",
+    video: "assets/projects/video10.mp4",
+    poster: "",
+  },
+
+  /* ---------- 2 ---------- */
+  {
+    title: "Untitled Project",
+    client: "Real Estate · 2026",
+    video: "assets/projects/video12.mp4",
+    poster: "",
+  },
+
+  /* ---------- 3 ---------- */
   {
     title: "Kfardebian",
     client: "Residential Development · 2026",
@@ -48,7 +64,7 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 2 ---------- */
+  /* ---------- 4 ---------- */
   {
     title: "Villa 04",
     client: "Private Villa · 2026",
@@ -56,7 +72,15 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 3 ---------- */
+  /* ---------- 5 ---------- */
+  {
+    title: "Untitled Project",
+    client: "Real Estate · 2026",
+    video: "assets/projects/video11.mp4",
+    poster: "",
+  },
+
+  /* ---------- 6 ---------- */
   {
     title: "Batroun",
     client: "Coastal Development · 2026",
@@ -64,7 +88,7 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 4 ---------- */
+  /* ---------- 7 ---------- */
   {
     title: "Untitled Project",
     client: "Teaser · 2026",
@@ -72,7 +96,7 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 5 ---------- */
+  /* ---------- 8 ---------- */
   {
     title: "Villa 01",
     client: "Private Villa · 2026",
@@ -80,7 +104,7 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 6 ---------- */
+  /* ---------- 9 ---------- */
   {
     title: "Hboub",
     client: "Residential Development · 2026",
@@ -88,7 +112,7 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 7 ---------- */
+  /* ---------- 10 ---------- */
   {
     title: "Villa 02",
     client: "Private Villa · 2026",
@@ -96,7 +120,7 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 8 ---------- */
+  /* ---------- 11 ---------- */
   {
     title: "Villa 03",
     client: "Private Villa · 2026",
@@ -104,7 +128,7 @@ window.PROJECTS = [
     poster: "",
   },
 
-  /* ---------- 9 ---------- */
+  /* ---------- 12 ---------- */
   {
     title: "Untitled Project",
     client: "Real Estate · 2026",
